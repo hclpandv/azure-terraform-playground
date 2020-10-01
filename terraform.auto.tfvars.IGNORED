@@ -1,0 +1,24 @@
+#--------------------------------------------------------------
+# AzureRM Terraform provider 
+#--------------------------------------------------------------
+subscription_id = "your-azure-subscription-id"
+client_id       = "azure-sp-app-id"
+client_secret   = "azure-sp-password"
+tenant_id       = "your-azure-subscription-id"
+
+#--------------------------------------------------------------
+# Subscription Restriction | Only access on certain RG
+#--------------------------------------------------------------
+resource_group = "RG_with_contrib_access"
+location = "westeurope"
+
+#--------------------------------------------------------------
+# Client 
+#--------------------------------------------------------------
+client_name = "viki"
+prefix = "viki-tf"
+
+#---------------------------------------------------------------
+# Network
+#---------------------------------------------------------------
+network_ip_range = "192.168.0.0/26"
